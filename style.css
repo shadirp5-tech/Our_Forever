@@ -1,0 +1,1293 @@
+/* =========================================================
+   SHADIR & JASEENA — WEDDING INVITATION
+   CLEAN MASTER CSS
+========================================================= */
+
+
+/* =========================================================
+   FONTS
+========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cormorant+SC:wght@500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+
+/* =========================================================
+   GLOBAL RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #faf9f6;
+  color: #2f2a25;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* =========================================================
+   HERO — FIRST SCREEN
+========================================================= */
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 25px;
+
+  text-align: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(197, 161, 94, 0.15),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(197, 161, 94, 0.12),
+      transparent 35%
+    ),
+    #faf9f6;
+}
+
+
+/* =========================================================
+   HERO DECORATIVE STARS
+========================================================= */
+
+.hero::before,
+.hero::after {
+  content: "✦";
+
+  position: absolute;
+
+  color: #c5a15e;
+
+  opacity: 0.35;
+
+  font-size: 80px;
+
+  pointer-events: none;
+
+  animation: heroFloat 6s ease-in-out infinite;
+}
+
+.hero::before {
+  top: 3%;
+  left: 8%;
+}
+
+.hero::after {
+  bottom: 3%;
+  right: 8%;
+
+  animation-delay: 2s;
+}
+
+
+/* =========================================================
+   HERO STAR FLOATING ANIMATION
+========================================================= */
+
+@keyframes heroFloat {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-25px) rotate(18deg);
+  }
+
+}
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.hero-content {
+  width: 100%;
+  max-width: 650px;
+
+  position: relative;
+  z-index: 2;
+
+  animation: reveal 1.5s ease forwards;
+}
+
+
+/* =========================================================
+   BISMILLAH
+========================================================= */
+
+.bismillah {
+  margin-bottom: 25px;
+
+  color: #9c7a43;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 23px;
+
+  font-weight: 500;
+
+  font-style: italic;
+
+  letter-spacing: 0.8px;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   INVITATION TEXT
+========================================================= */
+
+.invite-text {
+  max-width: 500px;
+
+  margin: 0 auto 22px;
+
+  color: #5C4033;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 20px;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 0.3px;
+}
+
+
+/* =========================================================
+   COUPLE NAMES
+========================================================= */
+
+h1 {
+  width: 100%;
+
+  margin: 0;
+
+  color: #302820;
+}
+
+
+/* =========================================================
+   NAME BLOCK
+========================================================= */
+
+.name-block {
+  display: block;
+
+  width: 100%;
+}
+
+
+/* =========================================================
+   SHADIR / JASEENA
+========================================================= */
+
+.couple-name {
+  display: block;
+
+  color: #302820;
+
+  font-family: 'Cormorant SC', serif;
+
+  font-size: clamp(46px, 15vw, 90px);
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  line-height: 1;
+
+  text-shadow:
+    1px 1px 2px rgba(176, 141, 87, 0.15);
+}
+
+
+/* =========================================================
+   AMPERSAND
+========================================================= */
+
+.ampersand {
+  display: block;
+
+  margin: 15px 0;
+
+  color: #c5a15e;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 42px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   PARENTS
+========================================================= */
+
+.parent-line {
+  display: block;
+
+  margin: 8px 0 2px;
+
+  color: #b08d57;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 14px;
+
+  font-weight: 400;
+
+  letter-spacing: 0.5px;
+
+  line-height: 1.4;
+}
+
+
+/* =========================================================
+   PLACE
+========================================================= */
+
+.parent-place {
+  display: block;
+
+  margin: 0;
+
+  color: #999;
+
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 400;
+
+  letter-spacing: 1.5px;
+
+  line-height: 1.4;
+
+  text-transform: capitalize;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+  margin: 25px 0 18px;
+
+  color: #c5a15e;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   QUOTE
+========================================================= */
+
+.quote {
+  max-width: 520px;
+
+  margin: 20px auto;
+
+  color: #5C4033;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 24px;
+
+  font-style: italic;
+
+  line-height: 1.45;
+}
+
+
+/* =========================================================
+   OPEN INVITATION BUTTON
+========================================================= */
+
+.open-button {
+  position: relative;
+
+  display: inline-flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 190px;
+
+  margin-top: 30px;
+
+  padding: 13px 34px 15px;
+
+  border: 1px solid #c5a15e;
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  color: #8e6f3f;
+
+  font-family: "Cinzel", serif;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 20px rgba(176, 141, 87, 0.10);
+
+  animation: invitationGlow 1.2s ease-in-out infinite;
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease,
+    color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* =========================================================
+   CLICK TO
+========================================================= */
+
+.click-to {
+  display: capitalize;
+
+  margin-bottom: 4px;
+
+  font-size: 17px;
+
+  font-weight: 500;
+
+  letter-spacing: 2.5px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   OPEN INVITATION TEXT
+========================================================= */
+
+.open-text {
+  display: capitalize;
+
+  font-size: 20px;
+
+  font-weight: 500;
+
+  letter-spacing: 2.5px;
+
+  line-height: 1.2;
+}
+
+
+/* =========================================================
+   GOLDEN RING
+========================================================= */
+
+.open-button::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border: 4px solid #c5a15e;
+
+  border-radius: 50px;
+
+  opacity: 0;
+
+  pointer-events: none;
+
+  animation: buttonRing 1s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   BUTTON GLOW
+========================================================= */
+
+@keyframes invitationGlow {
+
+  0%,
+  100% {
+    box-shadow:
+      0 5px 18px rgba(176, 141, 87, 0.10);
+  }
+
+  50% {
+    box-shadow:
+      0 5px 28px rgba(176, 141, 87, 0.32);
+  }
+}
+
+
+/* =========================================================
+   RING ANIMATION
+========================================================= */
+
+@keyframes buttonRing {
+
+  0%,
+  100% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   BUTTON HOVER
+========================================================= */
+
+.open-button:hover {
+  background: #b08d57;
+
+  color: #ffffff;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 10px 30px rgba(176, 141, 87, 0.30);
+}
+
+
+/* =========================================================
+   COUNTDOWN SECTION
+========================================================= */
+
+.countdown-section {
+  width: 100%;
+
+  padding: 100px 20px;
+
+  background: #ffffff;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   SECTION LABEL
+========================================================= */
+
+.section-label {
+  margin-bottom: 20px;
+
+  color: #b08d57;
+
+  font-size: 12px;
+
+  font-weight: 500;
+
+  letter-spacing: 3px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.countdown-section h2,
+.details-section h2 {
+  color: #302820;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(38px, 10vw, 60px);
+
+  font-weight: 500;
+
+  line-height: 1.1;
+}
+
+
+.countdown-section h2 em {
+  color: #b08d57;
+}
+
+
+/* =========================================================
+   COUNTDOWN
+========================================================= */
+
+.countdown {
+  width: 100%;
+
+  max-width: 700px;
+
+  margin: 55px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 12px;
+}
+
+
+.time-box {
+  padding: 22px 8px;
+
+  background: #faf9f6;
+
+  border: 1px solid rgba(176, 141, 87, 0.35);
+}
+
+
+.time-box span {
+  display: block;
+
+  color: #b08d57;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(32px, 9vw, 55px);
+}
+
+
+.time-box small {
+  display: block;
+
+  margin-top: 8px;
+
+  color: #777;
+
+  font-size: 9px;
+
+  letter-spacing: 1.5px;
+}
+
+
+/* =========================================================
+   SCROLL HINT
+========================================================= */
+
+.scroll-hint {
+  margin-top: 45px;
+
+  color: #b08d57;
+
+  text-align: center;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  letter-spacing: 2.5px;
+
+  line-height: 1.5;
+}
+
+
+.scroll-arrow {
+  margin-top: 10px;
+
+  font-size: 28px;
+
+  animation: bounceArrow 1.8s infinite;
+}
+
+
+@keyframes bounceArrow {
+
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   WEDDING DETAILS
+========================================================= */
+
+.details-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 50px 20px 100px;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+
+/* Cream layer */
+
+.details-section::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  right: 0;
+
+  top: -100px;
+  bottom: 0;
+
+  background: #f7f4ee;
+
+  z-index: 0;
+}
+
+
+/* Content above cream */
+
+.details-section > * {
+  position: relative;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   GOLD LINE
+========================================================= */
+
+.gold-line {
+  margin: 25px 0 45px;
+
+  color: #b08d57;
+
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   EVENT CARD
+========================================================= */
+
+.event-card {
+  max-width: 500px;
+
+  margin: 20px auto;
+
+  padding: 35px 25px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(176, 141, 87, 0.25);
+
+  box-shadow:
+    0 10px 40px rgba(70, 55, 35, 0.05);
+
+  transition:
+    transform 0.4s ease;
+}
+
+
+.event-card:hover {
+  transform: translateY(-6px);
+}
+
+
+.event-icon {
+  margin-bottom: 18px;
+
+  color: #b08d57;
+
+  font-size: 28px;
+}
+
+
+.event-card h3 {
+  margin-bottom: 18px;
+
+  color: #302820;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 34px;
+
+  font-weight: 500;
+}
+
+
+.event-date {
+  color: #777;
+
+  font-size: 12px;
+
+  letter-spacing: 1px;
+}
+
+
+.event-time {
+  margin-top: 12px;
+
+  color: #b08d57;
+
+  font-size: 15px;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   VENUE SECTION
+========================================================= */
+
+.venue-section {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 110px 20px;
+
+  text-align: center;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(197, 161, 94, 0.10),
+      transparent 35%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(197, 161, 94, 0.10),
+      transparent 35%
+    ),
+    #ffffff;
+}
+
+
+.venue-section h2 {
+  color: #302820;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: clamp(42px, 11vw, 65px);
+
+  font-weight: 500;
+
+  line-height: 1.05;
+}
+
+
+.venue-section h2 em {
+  color: #b08d57;
+
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   VENUE CARD
+========================================================= */
+
+.venue-card {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 550px;
+
+  margin: 0 auto;
+
+  padding: 50px 25px;
+
+  background: #faf9f6;
+
+  border: 1px solid rgba(176, 141, 87, 0.35);
+
+  box-shadow:
+    0 18px 60px rgba(70, 55, 35, 0.08);
+}
+
+
+.venue-icon {
+  width: 65px;
+  height: 65px;
+
+  margin: 0 auto 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 1px solid #c5a15e;
+
+  border-radius: 50%;
+
+  color: #b08d57;
+
+  font-size: 28px;
+}
+
+
+.venue-card h3 {
+  color: #302820;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 42px;
+
+  font-weight: 500;
+}
+
+
+.venue-place {
+  margin-top: 8px;
+
+  color: #b08d57;
+
+  font-size: 12px;
+
+  letter-spacing: 2px;
+
+  text-transform: capitalize;
+}
+
+
+.venue-divider {
+  width: 60px;
+
+  height: 1px;
+
+  margin: 30px auto;
+
+  background: #c5a15e;
+}
+
+
+.venue-address {
+  color: #666;
+
+  font-size: 13px;
+
+  line-height: 2;
+}
+
+
+.venue-note {
+  max-width: 380px;
+
+  margin: 28px auto 35px;
+
+  color: #5a5047;
+
+  font-family: 'Cormorant Garamond', serif;
+
+  font-size: 20px;
+
+  font-style: italic;
+
+  line-height: 1.5;
+}
+
+
+/* =========================================================
+   GET DIRECTIONS
+========================================================= */
+
+.direction-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 16px 25px;
+
+  background: #b08d57;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  transition:
+    background 0.4s ease,
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+.direction-button span {
+  font-size: 17px;
+}
+
+
+.direction-button:hover {
+  background: #8e6f3f;
+
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 10px 25px rgba(176, 141, 87, 0.25);
+}
+
+
+/* =========================================================
+   VENUE DECORATIONS
+========================================================= */
+
+.venue-decoration {
+  position: absolute;
+
+  color: #c5a15e;
+
+  opacity: 0.18;
+
+  font-size: 100px;
+
+  pointer-events: none;
+
+  animation: venueFloat 7s ease-in-out infinite;
+}
+
+
+.decoration-left {
+  top: 10%;
+  left: -20px;
+}
+
+
+.decoration-right {
+  right: -20px;
+  bottom: 8%;
+
+  animation-delay: 2s;
+}
+
+
+@keyframes venueFloat {
+
+  0%,
+  100% {
+    transform:
+      translateY(0)
+      rotate(0deg);
+  }
+
+  50% {
+    transform:
+      translateY(-25px)
+      rotate(20deg);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 500px) {
+
+  /* -------------------------------------------------------
+     HERO
+  ------------------------------------------------------- */
+
+  .hero {
+    height: 100vh;
+    height: 100svh;
+
+    min-height: 0;
+
+    padding: 15px 18px;
+  }
+
+
+  .hero::before,
+  .hero::after {
+    font-size: 55px;
+  }
+
+
+  /* -------------------------------------------------------
+     BISMILLAH
+  ------------------------------------------------------- */
+
+  .bismillah {
+    margin-bottom: 25px;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+  }
+
+
+  /* -------------------------------------------------------
+     INVITATION TEXT
+  ------------------------------------------------------- */
+
+  .invite-text {
+    margin-bottom: 17px;
+
+    font-size: 15px;
+
+    line-height: 1.35;
+  }
+
+
+  /* -------------------------------------------------------
+     NAMES
+  ------------------------------------------------------- */
+
+  .couple-name {
+    font-size: clamp(36px, 11vw, 62px);
+
+    letter-spacing: 1.5px;
+
+    line-height: 0.95;
+  }
+
+
+  .parent-line {
+    margin-top: 5px;
+
+    font-size: 10px;
+
+    letter-spacing: 0.3px;
+
+    line-height: 1.3;
+  }
+
+
+  .parent-place {
+    font-size: 9px;
+
+    letter-spacing: 1.2px;
+
+    line-height: 1.3;
+  }
+
+
+  .ampersand {
+    margin: 7px 0;
+
+    font-size: 28px;
+  }
+
+
+  /* -------------------------------------------------------
+     DIVIDER
+  ------------------------------------------------------- */
+
+  .divider {
+    margin: 10px 0 10px;
+
+    font-size: 20px;
+  }
+
+
+  /* -------------------------------------------------------
+     QUOTE
+  ------------------------------------------------------- */
+
+  .quote {
+    font-size: 18px;
+
+    line-height: 1.35;
+  }
+
+
+  /* -------------------------------------------------------
+     BUTTON
+  ------------------------------------------------------- */
+
+  .open-button {
+    min-width: 180px;
+
+    margin-top: 10px;
+
+    padding: 12px 28px 14px;
+  }
+
+
+  .click-to {
+    font-size: 9px;
+
+    letter-spacing: 2px;
+  }
+
+
+  .open-text {
+    font-size: 11px;
+
+    letter-spacing: 2px;
+  }
+
+
+  /* -------------------------------------------------------
+     COUNTDOWN
+  ------------------------------------------------------- */
+
+  .countdown-section {
+    padding: 90px 20px;
+  }
+
+
+  .countdown {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 10px;
+
+    margin-top: 40px;
+  }
+
+
+  .time-box {
+    padding: 20px 8px;
+  }
+
+
+  .time-box span {
+    font-size: 42px;
+  }
+
+
+  /* -------------------------------------------------------
+     SCROLL HINT
+  ------------------------------------------------------- */
+
+  .scroll-hint {
+    margin-top: 35px;
+
+    font-size: 15px;
+
+    letter-spacing: 2.2px;
+  }
+
+
+  .scroll-arrow {
+    margin-top: 8px;
+
+    font-size: 30px;
+  }
+
+
+  /* -------------------------------------------------------
+     DETAILS
+  ------------------------------------------------------- */
+
+  .details-section {
+    padding: 50px 20px 70px;
+  }
+
+
+  .details-section h2 {
+    font-size: clamp(30px, 9vw, 48px);
+  }
+
+
+  .gold-line {
+    margin: 15px 0 25px;
+  }
+
+
+  .event-card {
+    margin: 14px auto;
+
+    padding: 30px 18px;
+  }
+
+
+  .event-icon {
+    margin-bottom: 12px;
+
+    font-size: 22px;
+  }
+
+
+  .event-card h3 {
+    margin-bottom: 12px;
+
+    font-size: 26px;
+  }
+
+
+  .event-date {
+    font-size: 11px;
+  }
+
+
+  .event-time {
+    margin-top: 8px;
+
+    font-size: 13px;
+  }
+
+
+  /* -------------------------------------------------------
+     VENUE
+  ------------------------------------------------------- */
+
+  .venue-section {
+    padding: 90px 18px;
+  }
+
+
+  .venue-card {
+    padding: 40px 20px;
+  }
+
+
+  .venue-card h3 {
+    font-size: 36px;
+  }
+
+
+  .venue-note {
+    font-size: 19px;
+  }
+
+}
